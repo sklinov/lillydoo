@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "10 LILLYDOO WINDELN",
+        "image": "../img/diapers.jpg",
+        "desc": [
+            {
+                "text": "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz"
+            },
+            {
+                "text": "Extra weich und mit idealer Passform"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "15 FEUCHTTÜCHER MIT 99 % WASSER",
+        "image": "../img/water-wipes-15-small.jpg",
+        "desc": [
+            {
+                "text": "0 % Parfüme & PEGs, 100 % biologisch abbaubar"
+            },
+            {
+                "text": "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "15 SENSITIVE FEUCHTTÜCHER",
+        "image": "../img/sensitive-wipes-15-small.jpg",
+        "desc": [
+            {
+                "text": "0 % Parfüme & PEGs, 100 % biologisch abbaubar"
+            },
+            {
+                "text": "Extra dickes und kompostierbares Tuch"
+            }
+        ]
+    }
+] 

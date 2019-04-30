@@ -1,0 +1,92 @@
+//Fonts
+$text : Montserrat;
+$header : Museo300-Regular;
+//Colors
+$cyan: #00afab;
+$grey: #f8f8f8;
+//Images
+$header-bg : url('../src/assets/img/header.png');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+  font-family: $text;
+  color:#000;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+    font-size: 0.8em;
+}
+.highlighted {
+    color: $cyan;
+}
+
+.screen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.screen-bg {
+    background-image:  $header-bg;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 32vw;
+}
+.screen-grey {
+    background-color: $grey;
+}
+.screen-column {
+    flex-direction: column;
+}
+
+.cell {
+    //min-width: 375px;
+    //width: 45%;
+    //border: 1px solid black;
+    margin: 0;
+    max-height: 550px; 
+    padding: 20px;
+}
+.cell-centered {
+    text-align: center;
+    margin: auto;
+    align-content: center;
+}
+
+h1 {
+    font-family: $header;
+    font-size: 2.625rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    background-color: $cyan;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    height: 45px;
+    border: none;
+    color: #fff;
+    font-family: $text;
+    cursor: pointer;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 10px;
+}
