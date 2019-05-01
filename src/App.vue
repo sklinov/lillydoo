@@ -1,9 +1,9 @@
 <template>
   <div id="page">
     <Header />
-    <Product />
+    <Product v-on:change-pack="filterContents"/>
     <HowTo />
-    <Contents />
+    <Contents :filtered="cont" />
   </div>
 </template>
 
@@ -23,9 +23,16 @@ export default {
     HowTo,
     Contents
   },
+  methods : {
+    filterContents(pack) {
+      //console.log(pack);
+      this.cont = pack;
+      //console.log(this.cont);
+    }
+  },
   data() {
     return {
-      
+      cont : {}
     }
   }
 }

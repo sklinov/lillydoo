@@ -12,6 +12,7 @@
 
 <script>
 import stickerUrl from '../assets/img/oeko.png';
+
 export default {
     name: 'Header',
     methods:{ 
@@ -40,6 +41,7 @@ export default {
       top: 3%;
       right: 3%;
       width: 12%;
+      max-width: 155px;
       position: absolute;
     }
 </style>

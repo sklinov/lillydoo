@@ -1,5 +1,5 @@
 <template>
-    <div class="screen screen-grey screen-column">
+    <div class="screen screen-grey screen-column screen-padding3em">
         <h2>{{text.header}}</h2>
         <div  class="container">
             <div class="item" v-for="howto in howtos">
@@ -8,6 +8,7 @@
                 <div class="item__text">{{howto.text}}</div>
             </div>
         </div>
+        <a class="link link-narrow" :href="links.howtobottom.url">{{links.howtobottom.text}}</a>
     </div>
 </template>
 
@@ -20,6 +21,12 @@ export default {
     data () {
         return {
             howtos,
+            links: {
+                howtobottom: {
+                    text: "Erfahre hier mehr über das LILLYDOO Windel-Abo.",
+                    url: "https://www.lillydoo.com/de/windel-abo"
+                } 
+            },
             text: {
                 header: "Wie es funktioniert"
             }
@@ -57,6 +64,15 @@ export default {
         font-size: 0.75em;
         max-width: 25ch;
     }
+}
+.link-narrow {
+    max-width: 25ch;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75em;
 }
 
 </style>

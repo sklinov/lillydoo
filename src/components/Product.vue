@@ -2,11 +2,12 @@
     <div class="screen">
         <div class="cell">
             <img :src="current.image" :alt="current.size" class="image__main"/>
+            <!-- <img class="sticker" :src="stickerUrl" /> -->
         </div>
         <div class="cell">
             <h3>{{text.title}}</h3>
             <p class="text">{{text.choosesize}}</p>
-            <div class="selector" v-for="pack in trialPacks" :key="pack.size" v-on:click="changeImage(pack.size)" >       
+            <div class="selector" v-for="pack in trialPacks" :key="pack.size" v-on:click="changeImage(pack.size)" @click="$emit('change-pack', pack.include)">       
                 <input type="radio" name="sizes-selector" class="selector__radio">
                 <label class="selector__item">
                     <div class="selector__main">{{pack.size}}</div>
@@ -28,7 +29,6 @@
 <script>
 import stickerUrl from '../assets/img/oeko.png';
 import trialPacks from '../assets/products/trialPacks.json';
-import items      from '../assets/products/items.json';
 
 export default {
     name: 'Product',
@@ -40,7 +40,7 @@ export default {
     data() {
         return {
             trialPacks,
-            items,
+            stickerUrl,
             current : trialPacks,
             text: {
                     title : "Unser gratis testpaket",
@@ -69,6 +69,14 @@ $grey : #979797;
     text-align: center;
 }
 
+.sticker {
+      margin: 10px;
+      top: 3%;
+      right: 3%;
+      max-width: 155px;
+      position: absolute;
+    }
+
 .selector {
     display: inline-flex;
     .selector__item {
@@ -76,18 +84,21 @@ $grey : #979797;
         border: 1px solid $grey;
         margin: 3px;
         text-align: center;
-        font-size : 0.7em;
+        font-size : 1.3em;
         width: 4.5em;
         line-height: 1em;
         padding: 5px;
         
         &:hover {
             background-color: #00afab;
+            border-color: #99dfdd;
             color: white;
+            transition: 0.3s;
+            
         }
     }
     .selector__extra {
-        font-size : 0.5em;
+        font-size : 0.6em;
         text-transform: uppercase;
     }
     .selector__radio {
