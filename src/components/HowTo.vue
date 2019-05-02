@@ -61,8 +61,9 @@ export default {
     }
     .item__text {
         margin: 5px;
-        font-size: 0.75em;
-        max-width: 25ch;
+        font-size: 0.8em;
+        max-width: 35ch;
+        line-height: 1.4;
     }
 }
 .link-narrow {

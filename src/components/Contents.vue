@@ -62,7 +62,7 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
- //   max-width: 70vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -91,9 +91,24 @@ export default {
     }
     .item__text {
         margin: 5px;
-        font-size: 0.75em;
-        max-width: 35ch;
+        font-size: 0.8em;
+        max-width: 40ch;
+        line-height: 1.4;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .item {
+        flex-wrap: nowrap;
+        max-width: 90vw;
+        padding-left: 20px;
+
+        .item__image {
+            margin: 0;
+            max-width: 120px;
+        }
+    }
+    
 }
 
 </style>

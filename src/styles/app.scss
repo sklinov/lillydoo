@@ -11,6 +11,7 @@ $header-bg : url('../src/assets/img/header.png');
 html, body {
     margin: 0;
     padding: 0;
+    min-width: 375px;
 }
 
 #page {
@@ -23,7 +24,9 @@ html, body {
 
 .text {
     font-size: 0.8em;
+    line-height: 1.6;
 }
+
 .highlighted {
     color: $cyan;
 }
@@ -34,7 +37,14 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
+// @media screen and (max-width: 800px) {
+//     .screen {
+//         padding-left: 20px;
+//         padding-right: 20px;
+//     }
+//   }
 
 .screen-bg {
     background-image:  $header-bg;
@@ -42,7 +52,19 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100%;
     height: 32vw;
+    max-height: 550px;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 800px) {
+    .screen-bg {
+        background-size: 220%;
+        height: 100vh;
+        background-position-y: bottom;
+        background-position-x: 85%;
+    }
+}
+
 .screen-grey {
     background-color: $grey;
 }
@@ -54,10 +76,31 @@ html, body {
     padding-bottom: 3em;
 }
 
+.container {
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+    .container-gradient {
+        background: linear-gradient(#f4f4f4 0%, #edece8 20%, transparent 60%);
+    }
+}
+@media screen and (max-width: 500px) {
+    .container-gradient {
+        background: linear-gradient(#f4f4f4 0%, #edece8 50%, transparent 60%);
+    }
+}
+
+
 .cell {
     margin: 0;
     max-height: 550px; 
     padding: 20px;
+    position: relative;
+    max-width: 550px;
 }
 .cell-centered {
     text-align: center;
@@ -74,6 +117,12 @@ h1 {
     margin-bottom: 10px;
     font-weight: 300;
 }
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+  }
+
 h2 {
     margin-left: auto;
     margin-right: auto;
@@ -98,6 +147,13 @@ h2 {
     background-color: $cyan-active;
 
 }
+
+@media screen and (max-width: 800px) {
+    .button {
+        font-size: 0.9em;
+    }
+  }
+
 
 .link {
     color: $cyan;
