@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "10 LILLYDOO WINDELN",
-        "image": "../img/diapers.jpg",
+        "image": "./img/diapers.jpg",
         "desc": [
             {
                 "text": "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz"
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "15 FEUCHTTÜCHER MIT 99 % WASSER",
-        "image": "../img/water-wipes-15-small.jpg",
+        "image": "./img/water-wipes-15-small.jpg",
         "desc": [
             {
                 "text": "0 % Parfüme & PEGs, 100 % biologisch abbaubar"
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "name": "15 SENSITIVE FEUCHTTÜCHER",
-        "image": "../img/sensitive-wipes-15-small.jpg",
+        "image": "./img/sensitive-wipes-15-small.jpg",
         "desc": [
             {
                 "text": "0 % Parfüme & PEGs, 100 % biologisch abbaubar"

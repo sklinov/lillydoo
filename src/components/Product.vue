@@ -46,7 +46,7 @@ export default {
             current : trialPacks,
             checked : '',
             text: {
-                    title : "Unser gratis testpaket",
+                    title : "Unser gratis Testpaket",
                     desc : "Teste jetzt unsere Windeln und Feuchttücher. Wir zahlen die Produkte, Du nur den Versand.",
                     buttonText : "IN DEN WARENKORB LEGEN",
                     choosesize : "WÄHLE DEINE GRÖSSE",
@@ -60,11 +60,11 @@ export default {
     created() {
         this.current = this.trialPacks[0];
     }
-
 }
 </script>
 
 <style lang="scss" scoped>
+
 $grey : #979797;
 
 .container {
@@ -99,6 +99,11 @@ $grey : #979797;
       left: 3%;
       max-width: 155px;
       position: absolute;
+    }
+@media screen and (max-width: 800px) {
+        .sticker {
+            max-width: 30vw;
+        }
     }
 
 .selector {
@@ -135,6 +140,7 @@ input[type="radio"]:checked + label {
 }
 ul {
     font-size: 1em;
+    max-width: 40ch;
 }
 
 .button-wide {

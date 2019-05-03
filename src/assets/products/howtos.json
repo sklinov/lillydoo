@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "image": "../img/icon-trialbox.svg",
+        "image": "./img/icon-trialbox.svg",
         "header": "DEIN TESTPAKET",
         "text": "Wir schenken Dir die Produkte, Du übernimmst nur das Porto."
     },
     {
         "id": 2,
-        "image": "../img/icon-flexibility.svg",
+        "image": "./img/icon-flexibility.svg",
         "header": "DEINE FLEXIBILITÄT",
         "text": "Erste Monatsbox nach 14 Tagen für 49,50 € erhalten. Oder noch vor der ersten Lieferung kündigen."
     },
     {
         "id": 3,
-        "image": "../img/icon-moneybox.svg",
+        "image": "./img/icon-moneybox.svg",
         "header": "DEINE MONATSBOX",
         "text": "Jederzeit Designs oder Lieferintervalle anpassen oder die Windelgröße ändern."
     }

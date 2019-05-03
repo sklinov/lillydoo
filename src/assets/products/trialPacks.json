@@ -2,7 +2,7 @@
     {
         "size": 1,
         "kg": "2-3 kg",
-        "image" : "../img/size1.jpg",
+        "image" : "./img/size1.jpg",
         "include" : [
             {
                 "id" : 1
@@ -15,7 +15,7 @@
     {
         "size": 2,
         "kg": "3-4 kg",
-        "image" : "../img/size2.jpg",
+        "image" : "./img/size2.jpg",
         "include" : [
             {
                 "id" : 1
@@ -28,7 +28,7 @@
     {
         "size": 3,
         "kg": "4-7 kg",
-        "image" : "../img/size3.jpg",
+        "image" : "./img/size3.jpg",
         "include" : [
             {
                 "id" : 1
@@ -41,7 +41,7 @@
     {
         "size": 4,
         "kg": "7-10 kg",
-        "image" : "../img/size4.jpg",
+        "image" : "./img/size4.jpg",
         "include" : [
             {
                 "id" : 1
@@ -54,7 +54,7 @@
     {
         "size": 5,
         "kg": "10-12 kg",
-        "image" : "../img/size5.jpg",
+        "image" : "./img/size5.jpg",
         "include" : [
             {
                 "id" : 1

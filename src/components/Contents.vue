@@ -62,7 +62,6 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,6 +69,7 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 2em;
 
     .item__imagewrapper {
         object-fit: contain;

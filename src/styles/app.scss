@@ -1,10 +1,12 @@
 //Fonts
 $text : Montserrat;
 $header : Museo300-Regular;
+
 //Colors
 $cyan: #00afab;
 $cyan-active: #99dfdd;
 $grey: #f8f8f8;
+
 //Images
 $header-bg : url('../src/assets/img/header.png');
 
@@ -39,12 +41,6 @@ html, body {
     justify-content: space-around;
     
 }
-// @media screen and (max-width: 800px) {
-//     .screen {
-//         padding-left: 20px;
-//         padding-right: 20px;
-//     }
-//   }
 
 .screen-bg {
     background-image:  $header-bg;
@@ -56,7 +52,7 @@ html, body {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .screen-bg {
         background-size: 220%;
         height: 100vh;
@@ -83,7 +79,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .container-gradient {
         background: linear-gradient(#f4f4f4 0%, #edece8 20%, transparent 60%);
     }
@@ -94,14 +90,21 @@ html, body {
     }
 }
 
-
 .cell {
     margin: 0;
     max-height: 550px; 
     padding: 20px;
     position: relative;
     max-width: 550px;
+    width: 45vw;
 }
+
+@media screen and (max-width: 800px) {
+    .cell {
+        width: initial;
+    }
+  }
+
 .cell-centered {
     text-align: center;
     margin: auto;
@@ -117,7 +120,7 @@ h1 {
     margin-bottom: 10px;
     font-weight: 300;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     h1 {
         font-size: 2rem;
     }
@@ -126,6 +129,11 @@ h1 {
 h2 {
     margin-left: auto;
     margin-right: auto;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 .button {
@@ -142,13 +150,14 @@ h2 {
     padding-right: 10%;
     margin: 10px;
     transition: 0.3s;
+    outline-color: $cyan;
 }
 .button:hover {
     background-color: $cyan-active;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .button {
         font-size: 0.9em;
     }

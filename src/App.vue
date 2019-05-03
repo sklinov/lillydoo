@@ -1,7 +1,7 @@
 <template>
   <div id="page">
     <Header />
-    <Product v-on:change-pack="filterContents"/>
+    <Product v-on:change-pack="filterContents" />
     <HowTo />
     <Contents :filtered="cont" />
   </div>
@@ -25,9 +25,7 @@ export default {
   },
   methods : {
     filterContents(pack) {
-      //console.log(pack);
       this.cont = pack;
-      //console.log(this.cont);
     }
   },
   data() {

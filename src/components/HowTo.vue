@@ -41,7 +41,7 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 70vw;
+    //width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }

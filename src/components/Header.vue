@@ -3,7 +3,7 @@
         <div class="container container-gradient">
             <div class="cell cell-centered">
                 <h1>{{headerText}}</h1>
-                <button class="button" v-on:click="goToSizes" >{{buttonText}}</button>
+                <button class="button">{{buttonText}}</button>
             </div>
             <div class="cell cell-centered forsticker">
                 <img class="sticker" :src="stickerUrl" />
@@ -17,13 +17,6 @@ import stickerUrl from '../assets/img/oeko.png';
 
 export default {
     name: 'Header',
-    methods:{ 
-    goToSizes: function(event) {
-        event.preventDefault();
-        console.log("Go to sizes");
-    },
-    }
-    ,
     data() {
         return {
             headerText : 'Entdecke unsere Hautfreundlichkeit',
@@ -51,7 +44,7 @@ export default {
       position: absolute;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
     .sticker {
             right: -70%;
             top: -30%;
