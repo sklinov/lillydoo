@@ -1,29 +1,14 @@
 # lillydoo_test
+Test task for Lillydoo.com.
+Built with Vue.js and SCSS.
 
-## Project setup
+## Manage the project
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vue ui
 ```
 
 ### Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Build note: check the destination folder setting in vue.config.js before build and deploy. Now set to /lillydoo subfolder
